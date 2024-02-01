@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CS 408 Lab 2A</string>
+    <string name="total_bill">Total Bill:</string>
+    <string name="calculate">Calculate</string>
+    <string name="number_of_people">Number of People:</string>
+    <string name="tip_percentage">Tip Percentage:</string>
+    <string name="total_per_person">Total per Person:</string>
+    <string name="enter_bill">Enter bill total</string>
+    <string name="enter_people">Enter number of people</string>
+    <string name="enter_tip">Enter tip percent</string>
+</resources>
