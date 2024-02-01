@@ -28,24 +28,22 @@ public class MainActivity extends AppCompatActivity {
         binding.calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //check if inputs have values before creating bindings?
-                //app works when all values have text
-                //app shuts down if user fails to provide values
 
                 EditText billInput = binding.billInput;
                 EditText tipInput = binding.tipInput;
                 EditText peopleInput = binding.peopleInput;
                 TextView t = binding.resultOutput;
-                String output;
 
+                //Logs the inputted values
                 Log.d(TAG, "bill input: " + billInput.getText().toString());
                 Log.d(TAG, "tip input: " + tipInput.getText().toString());
                 Log.d(TAG, "people input: " + peopleInput.getText().toString());
 
                 boolean billempty = billInput.getText().toString().isEmpty();
-                boolean tipempty = billInput.getText().toString().isEmpty();
-                boolean peopleempty = billInput.getText().toString().isEmpty();
+                boolean tipempty = tipInput.getText().toString().isEmpty();
+                boolean peopleempty = peopleInput.getText().toString().isEmpty();
 
+                //Logs if input values were empty
                 Log.d(TAG, "bill empty: " + billempty);
                 Log.d(TAG, "tip empty: " + tipempty);
                 Log.d(TAG, "people empty: " + peopleempty);
@@ -58,13 +56,10 @@ public class MainActivity extends AppCompatActivity {
                     float total = bill * tip;
                     float result = total / people;
 
-                    output = label + format.format(result);
-                }
-                else {
-                    output = label;
+                    String output = label + " " + format.format(result);
+                    t.setText(output);
                 }
 
-                t.setText(output);
             }
         });
     }
