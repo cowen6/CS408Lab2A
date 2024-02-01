@@ -49,7 +49,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/billLabel"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/billLabel"
-        tools:ignore="Autofill" />
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/tipInput"
@@ -65,7 +65,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/tipLabel"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/tipLabel"
-        tools:ignore="Autofill" />
+        android:importantForAutofill="no"/>
 
     <EditText
         android:id="@+id/peopleInput"
@@ -81,7 +81,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/peopleLabel"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/peopleLabel"
-        tools:ignore="Autofill" />
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/calculateButton"
